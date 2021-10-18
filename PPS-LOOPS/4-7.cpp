@@ -9,12 +9,17 @@ int main(){
         cin >> num;
         if(num % 3 == 0){
             cout << "Critera unsatisfied" << endl;
+            break;
+        }
+        else if(num < 0){
+            cout << "No negative numbers allowed "<< endl;
+            break;
         }
         else{
             sum = sum + num;
             cout << sum << endl;
             i = i + 1;
-        }i = i + 1;
+        }
         
     }while(num > 0);
     return 0;
